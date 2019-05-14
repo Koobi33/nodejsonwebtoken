@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://admin:admin@lnolan-da5ke.azure.mongodb.net/test?retryWrites=true"
+  "mongoURI": "mongodb+srv://admin:admin@lnolan-da5ke.azure.mongodb.net/test?retryWrites=true",
+  "jwtSecret": "superSecretTOkeN"
 }
