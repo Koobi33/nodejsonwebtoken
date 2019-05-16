@@ -9,14 +9,14 @@ const TaskSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-   // taskType: {
-    //    type: String,
-    //    required: true
-   // },
-  //  taskDate: {
-    //    type: Date,
-   //     required: true
-  //  },
+    taskType: {
+        type: String,
+        required: true
+    },
+    taskDate: {
+        type: Date,
+        required: true
+    },
     taskIsComplete: {
         type: Boolean,
         required: true

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="src/style/css.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+    <script src="src/js/registration.js"></script>
+    <style type="text/css">
+        body {
+            background-color: #DADADA;
+        }
+    </style>
+    <script src="js/registration.js"></script>
+</head>
+<body>
+<div class="registration ui middle aligned center aligned">
+<div class="ui segment">
+<form class="ui form segment">
+    <h2 class="ui teal header" style="text-align: center">Регистрация</h2>
+        <div class="segment bord">
+            <input placeholder="Имя" name="name" type="text">
+        </div>
+<!--        <div class="segment bord">-->
+<!--            <input placeholder="Фамилия" name="secondname" type="text">-->
+<!--        </div>-->
+<!--        <div class="segment bord">-->
+<!--            <input placeholder="Username" name="username" type="text">-->
+<!--        </div>-->
+        <div class="segment bord">
+            <input placeholder="E-mail" name="email" type="email">
+        </div>
+    <div class="segment bord">
+    <div class="ui two column grid">
+        <div class="column">
+            <input placeholder="Password" type="password" name="password">
+        </div>
+        <div class="column">
+            <input placeholder="Repeat password" type="password" name="password2">
+        </div>
+    </div>
+    </div>
+    <div class="ui segment bord">
+        <p>Отметьте имена любимых стажеров</p>
+            <div class="ui three column grid">
+                <div class="column compact segment">
+                    <div class="ui checkbox">
+                        <input type="checkbox" name="love1">
+                        <label>Ира</label>
+                    </div>
+                </div>
+                <div class="column compact segment">
+                    <div class="ui checkbox">
+                        <input type="checkbox" name="love2">
+                        <label>Дима</label>
+                    </div>
+                </div>
+                <div class="column compact segment">
+                    <div class="ui checkbox">
+                        <input type="checkbox" name="love3">
+                        <label>Никита</label>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="ui segment bord">
+        <div class="ui checkbox">
+            <input type="checkbox" name="terms">
+            <label>Я согласен(-а) на обработку данных</label>
+        </div>
+    </div>
+    <div class="ui fluid large teal submit button">Зарегистрироваться</div>
+    <div class="ui error message"></div>
+</form>
+<div class="ui message" style="text-align: center">
+	        Уже есть аккаунт? <a href="login.html"> Войти</a>
+</div>
+</div>
+</div>
+</body>
+</html>
