@@ -2,9 +2,12 @@ function ready() {
 	document.addEventListener('click', function (e) {
 		let tar = e.target;
 		if(tar.classList.contains("button")) {
+			let email = document.getElementById('emailform').value;
+			let password = document.getElementById('passwordform').value;
+			if (email && password) {
 			let loginData = {
-				email: document.getElementById('emailform').value,
-				password: document.getElementById('passwordform').value,
+				email: email,
+				password: password
 			};
 			var xhr = new XMLHttpRequest();
 			var url = "http://35.204.124.30:3012/api/auth";
@@ -19,6 +22,7 @@ function ready() {
 					        }
 			};
 			xhr.send(JSON.stringify(loginData));
+		}
 		}
 	})
 }

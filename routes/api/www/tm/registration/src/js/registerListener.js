@@ -2,10 +2,16 @@ function ready() {
 	document.addEventListener('click', function (e) {
 		let tar = e.target;
 		if(tar.classList.contains("button")) {
+				let name = document.getElementById('nameform').value;
+				let email = document.getElementById('emailform').value;
+				let password = document.getElementById('passwordform').value;
+				let password2 = document.getElementById('passwordform2').value;
+				let agree = document.getElementById('agree');
+			if(name && email && password && password2 && agree.checked) {
 			let registerData = {
-				name: document.getElementById('nameform').value,
-				email: document.getElementById('emailform').value,
-				password: document.getElementById('passwordform').value,
+				name: name,
+				email: email,
+				password: password
 			};
 			var xhr = new XMLHttpRequest();
 			var url = "http://35.204.124.30:3012/api/signup";
@@ -19,7 +25,7 @@ function ready() {
 				}
 			};
 				xhr.send(JSON.stringify(registerData));
-			
+			}
 		}
 	})
 }
